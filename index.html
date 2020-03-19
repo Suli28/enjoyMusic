@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="./icons/icon2copy.ico" type="image/x-icon" />
+  <title>轻音乐</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/recommend.css" />
+  <link rel="stylesheet" href="./css/recommendSongs.css" />
+  <link rel="stylesheet" href="./css/songword.css" />
+</head>
+
+<body>
+
+  <audio id="audio" src=""></audio>
+
+  <div class="lovemusic">
+
+    <!-- 头部 -->
+    <header>
+      <div class="system-nav"></div>
+      <div class="nav clearfix">
+        <div class="fl nav-list">
+          <span>音乐库</span>
+          <!-- <span>发现</span> -->
+          <i class="move-line"></i>
+        </div>
+        <div class="fr nav-icons clearfix">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="clearfix child-list">
+        <span class="active" data-module="main-content1">推荐</span>
+        <span data-module="main-content3">歌单</span>
+        <span data-module="main-content4">电台</span>
+        <span data-module="main-content5">MV</span>
+        <span data-module="main-content6">排行榜</span>
+      </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+
+      <!-- 音乐库-推荐 -->
+      <div class="main-content1" name="song1">
+        <div class="recommend">
+          <div class="recommend-banner">
+            <!-- <img class="auto-img" src="./images/banner2.jpg" alt=""> -->
+          </div>
+          <div class="hot-recommend">
+            <div class="hot-text">
+              <i class="hot-line"></i>
+              <span>热门推荐</span>
+            </div>
+            <div class="recommend-info clearfix">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 音乐库-推荐-全部歌单 -->
+      <div class="main-content2" name="song0">
+        <div class="recommend-songs">
+          <div class="recommend-songs-title">
+            <div class="clearfix">
+              <i class="songs-line"></i>
+              <span class="fl">全部歌单 &gt; </span>
+              <span id="name" class="fl one-text1 sub-title"></span>
+            </div>
+          </div>
+          <div class="songs-list">
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 底部控制条 -->
+    <div class="controls-box">
+
+      <!-- 音乐控制 name=0暂停，name=1播放-->
+      <div class="controls" name="0">
+        <div class="fl clearfix controls-img">
+          <div class="singer-avatar fl">
+            <img class="auto-img" src="" alt="" />
+          </div>
+          <div class="fl singer-info">
+            <p class="song-name one-t1"></p>
+            <p class="singer one-t1"></p>
+          </div>
+
+          <!-- 音符 -->
+          <i class="yinfu y1"></i>
+          <i class="yinfu y2"></i>
+          <i class="yinfu y3"></i>
+
+        </div>
+        <div class="fr clearfix controls-icons">
+          <span class="list-menu"></span>
+          <span class="play"></span>
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 加载提示 -->
+  <div class="tip-box">
+    <div class="tip">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+
+  <!-- 最近播放列表 -->
+  <div class="recent-list">
+    <div class="recent-songs">
+     
+    </div>
+  </div>
+
+  <!-- 歌词面板 -->
+  <div class="song-word">
+    <div class="song-word-box"></div>
+    <div class="song-word-content">
+
+      <!-- 头部 -->
+      <div class="header">
+        <div class="header-system"></div>
+        <div class="sn">
+          <span class="sname"></span>
+          <span class="header-colse"></span>
+        </div>
+      </div>
+
+      <!-- 歌词 -->
+      <div class="words">
+        <div class="words-box">
+        </div>
+      </div>
+
+      <!-- 控制条 -->
+      <div class="ctrl">
+        <!-- 进度条 -->
+        <div class="progress-box">
+          <div class="clearfix audio-time">
+            <span class="fl currenttime">00:00</span>
+            <span class="fr duration">00:00</span>
+          </div>
+          <div class="progress">
+            <div class="active-progress"></div>
+            <div class="mask"></div>
+            <div class="layer"></div>
+          </div>
+        </div>
+
+        <div class="ctrl-box">
+
+          <div class="ctrl-content">
+            <span class="arrow"></span>
+            <span class="header-play"></span>
+            <span class="arrow"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="./js/rem.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/recommend.js"></script>
+  <script src="./js/recommendSongs.js"></script>
+  <script src="./js/songword.js"></script>
+</body>
+
+</html>

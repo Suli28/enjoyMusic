@@ -1,0 +1,139 @@
+.main-content2{
+  height: calc(100% - .1rem);
+  overflow-y: auto;
+  margin-top: .1rem;
+  display: none;
+}
+
+.recommend-songs .recommend-songs-title{
+  height: .3rem;
+  font-size: .14rem;
+  line-height: .3rem;
+  padding: 0 .1rem;
+  background-color: #333;
+  
+}
+
+.recommend-songs .recommend-songs-title>div{
+  position: relative;
+  padding-left: .1rem;
+}
+
+.recommend-songs .songs-line{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 2px;
+  height: .14rem;
+  background-color: #83F7D2;
+}
+
+.recommend-songs .songs-list{
+  padding: 0 .1rem;
+  background-color: #333;
+}
+
+.recommend-songs .songs-list-item{
+  height: .6rem;
+  border-top: 2px solid #060A0B;
+  padding: .1rem 0;
+}
+
+.recommend-songs .songs-list-item.active{
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.recommend-songs .songs-list-item>div{
+  float: left;
+}
+
+.recommend-songs .songs-img{
+  width: .6rem;
+  height: .6rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.recommend-songs .songs-time{
+  width: .5rem;
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .12rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.recommend-songs .songs-play{
+  width: .3rem;
+  height: .16rem;
+  margin: .22rem .1rem 0;
+
+}
+
+.recommend-songs .sub-title{
+  font-size: .12rem;
+  color: #aaa;
+}
+
+.recommend-songs .songs-play>i{
+  float: left;
+  width: .02rem;
+  height: .16rem;
+  background-color: #f5f5f5;
+  margin: 0 .02rem;
+}
+
+.recommend-songs .songs-play.play-active>i:nth-child(1){
+  animation: playline .3s linear 0s infinite alternate;
+}
+
+.recommend-songs .songs-play.play-active>i:nth-child(2){
+  animation: playline .3s linear 0.15s infinite alternate;
+}
+
+.recommend-songs .songs-play.play-active>i:nth-child(3){
+  animation: playline .3s linear 0.05s infinite alternate;
+}
+
+.recommend-songs .songs-play.play-active>i:nth-child(4){
+  animation: playline .3s linear 0.25s infinite alternate;
+}
+
+.recommend-songs .songs-play.play-active>i:nth-child(5){
+  animation: playline .3s linear 0.1s infinite alternate;
+}
+
+.recommend-songs .songs-info{
+  width: calc(100% - .6rem - .5rem - .3rem - .2rem - .2rem);
+  margin: 0 .1rem;
+  height: .4rem;
+  margin-top: .1rem;
+}
+
+.recommend-songs .t1{
+  height: .24rem;
+  font-size: .14rem;
+  line-height: .24rem;
+  color: #f5f5f5;
+}
+
+.recommend-songs .t2{
+  height: .16rem;
+  font-size: .12rem;
+  line-height: .16rem;
+  color: #aaa;
+}
+
+@keyframes playline{
+
+  0%{
+    transform: scaleY(.2);
+  }
+
+  100%{
+    transform: scaleY(1);
+  }
+
+}

@@ -1,0 +1,185 @@
+.song-word{
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  /* display: none; */
+  background: url("http://p1.music.126.net/ZXF3bBgvrGctmQKXvQx9CQ==/18782957137588160.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.song-word-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/sw.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: .95;
+}
+
+.song-word-content{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  height: calc(24px + .56rem);
+  /* background-color: #666; */
+  
+}
+
+.header-system{
+  height: 24px;
+  /* background-color: #000; */
+}
+
+.sn{
+  text-align: center;
+  height: .56rem;
+  line-height: .56rem;
+  position: relative;
+  font-size: .24rem;
+  letter-spacing: 3px;
+}
+
+.header-colse{
+  position: absolute;
+  right: .2rem;
+  top: 0;
+  bottom: 0;
+  width: .3rem;
+  height: .3rem;
+  margin: auto 0;
+  background: url("../icons/close.png") no-repeat center center;
+  background-size: .3rem .3rem;
+}
+
+.words{
+  height: calc(100% - .56rem - 24px - 1.5rem);
+  /* background-color: #eee; */
+  overflow-y: hidden;
+  position: relative;
+}
+
+.ctrl{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  /* background-color: #aaa; */
+}
+
+.progress-box{
+  font-size: .12rem;
+  height: .29rem;
+  margin-bottom: .1rem;
+}
+
+.audio-time{
+  padding: 0 .1rem;
+  height: .15rem;
+  line-height: .15rem;
+}
+
+.progress{
+  height: .04rem;
+  background-color: #aaa;
+  margin-top: .1rem;
+  position: relative;
+}
+
+.active-progress{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: .04rem;
+  width: 0;
+  background-color: #83F7D2;
+}
+
+.mask{
+  position: absolute;
+  left: 0;
+  top: -.04rem;
+  height: .12rem;
+  width: .12rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.layer{
+  position: absolute;
+  top: -.04rem;
+  height: .12rem;
+  width: 100%;
+}
+
+.ctrl-box{
+  height: 1.11rem;
+  position: relative;
+}
+
+.ctrl-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.7rem;
+}
+.ctrl-content>span{
+  float: left;
+}
+
+.ctrl-content>span.arrow{
+  width: .3rem;
+  height: .3rem;
+  margin-top: .1rem;
+}
+
+.ctrl-content>.header-play{
+  width: .5rem;
+  height: .5rem;
+  margin: 0 .3rem;
+}
+
+.ctrl-content>span:nth-child(1){
+  background: url("../icons/prev.png") no-repeat center center;
+  background-size: .3rem .3rem;
+}
+
+.ctrl-content>span:nth-child(2){
+  background: url("../icons/play1.png") no-repeat center center;
+  background-size: .5rem .5rem;
+}
+
+.ctrl-content>span:nth-child(3){
+  background: url("../icons/next.png") no-repeat center center;
+  background-size: .3rem .3rem;
+}
+
+.words-box{
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  width: 100%;
+}
+
+.words-box>p{
+  height: .4rem;
+  line-height: .4rem;
+  text-align: center;
+  font-size: .14rem;
+}
+
+.words-box>p.active{
+  color: #83F7D2;
+  font-size: .16rem;
+}

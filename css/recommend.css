@@ -1,0 +1,76 @@
+.main-content1{
+  height: 100%;
+  overflow-y: auto;
+  /* display: none; */
+}
+
+.recommend .hot-recommend{
+  padding: 0 .1rem;
+}
+
+.recommend .hot-text{
+  font-size: .14rem;
+  height: .3rem;
+  line-height: .3rem;
+  position: relative;
+  padding-left: .1rem;
+}
+
+.recommend .hot-line{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 2px;
+  height: .14rem;
+  background-color: #f5f5f5;
+}
+
+.recommend .recommend-info>div{
+  float: left;
+  width: calc(100% / 3 - .1rem + .1rem / 3);
+  margin-right: .1rem;
+  margin-bottom: .1rem;
+  position: relative;
+}
+
+.recommend .recommend-info>div:nth-child(3n){
+  margin-right: 0;
+}
+
+.recommend .recommend-info-text{
+  height: 32px;
+  font-size: 12px;
+}
+
+.recommend .recommend-info-layer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.recommend .recommend-info-layer{
+  height: .24rem;
+}
+
+.recommend .listen-icon{
+  width: .16rem;
+  height: .16rem;
+  margin-top: .04rem;
+  background: url("../icons/erji.png") no-repeat center center;
+  background-size: .16rem .16rem;
+}
+
+.recommend .listen-count{
+  font-size: .12rem;
+  line-height: .24rem;
+  color: #f5f5f5;
+  margin: 0 .06rem;
+}
+
+.recommend .info-img{
+  height: 1.25rem;
+}
